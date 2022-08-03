@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>AddRecord</Title>
+			<Shortcut>rec</Shortcut>
+			<Description>Code snippet for Record</Description>
+			<Author>ramons</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Record name</ToolTip>
+					<Default>MyRecord</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public record $name$
+	{
+		$selected$$end$
+	}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
